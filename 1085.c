@@ -28,9 +28,9 @@ int SortFinal(const void *a, const void *b)
     if((int)aa->totalScore < (int)bb->totalScore)
         return 1;
     else if((int)aa->totalScore > (int)bb->totalScore)
-        return 0;
+        return -1;
     if(aa->numStudents<bb->numStudents)
-        return 0;
+        return -1;
     else if(aa->numStudents>bb->numStudents)
         return 1;
     return strcmp(aa->university, bb->university);
