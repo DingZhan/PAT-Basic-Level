@@ -4,19 +4,19 @@
 #include <string>
 
 /*
-ÊäÈëÑùÀý£º
+ÃŠÃ¤ÃˆÃ«Ã‘Ã¹Ã€Ã½Â£Âº
 10
 60 75 90 55 75 99 82 90 75 50
 3 75 90 88
-Êä³öÑùÀý£º
+ÃŠÃ¤Â³Ã¶Ã‘Ã¹Ã€Ã½Â£Âº
 3 2 0
 */
 
 int main()
 {
-    int N, i, scoreCount[100], score, N2, *scoreIDs;
+    int N, i, scoreCount[101], score, N2, *scoreIDs;
 
-    for(i=0; i<100; ++i)
+    for(i=0; i<101; ++i)
         scoreCount[i]=0;
     std::cin>>N;
     for(i=0; i<N; ++i)
