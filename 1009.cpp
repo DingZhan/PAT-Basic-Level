@@ -1,3 +1,5 @@
+#include <iostream>
+#include <cstring>
 
 void ReverseSentence(char* str)
 {
