@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -54,13 +55,12 @@ int main()
             //test conflicts
             for(t=0; t<j; ++t)
             {
-                a = goods[j];
                 //no conflicts record at all
-                if(!unmatch[a])
+                if(!unmatch[g])
                     continue;
-                for(jj=0; jj<unmatchNum[a]; ++jj)
+                for(jj=0; jj<unmatchNum[g]; ++jj)
                 {
-                    if(unmatch[a][jj]==goods[t])
+                    if(unmatch[g][jj]==goods[t])
                     {
                         bSucc=0;
                         break;
