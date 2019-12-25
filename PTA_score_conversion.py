@@ -3,14 +3,18 @@ file = open("score.txt", "w")
 b = e = 1.0;
 while(True):
     score = int(input())
-#for score in range(0, 100):
+#for score in range(0, 101):
 #    print("{0} ".format(score))
     if score<0:
         break
-    if score<35:
-        e = 50/34.0;
+    if score<15:
+        e = 34/14.0;
         b = e
-        ratio = (score-0.0)/34
+        ratio = (score-0.0)/14
+    elif score<35:
+        b = 35/15.0
+        e = 50/34.0
+        ratio = (score-15.0)/(34-15)
     elif score<50:
         b = 60/35.0
         e = 79/49.0
